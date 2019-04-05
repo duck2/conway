@@ -39,7 +39,7 @@ reg[2:0] N;
 /* Use many always blocks to show different sequential and
  * combinatorial components. This is a state machine with output
  * given only at the WR state. Until that time, it checks the neighbor
- * cells and keeps a counter N. When WR is reached, a combinatorial
+ * cells and keeps a counter N. When WR is reached, a combinational
  * logic stage decides whether to write 0 or 1 to the next state of game. */
 always @(posedge clk) begin
 	if(rst) begin
